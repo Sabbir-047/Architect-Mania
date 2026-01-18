@@ -114,7 +114,6 @@
 
 /* feature section */
 .feature-container {
-    display: flex;
     gap: 4.75rem;
     padding: 5.3rem 0 8.13rem 0rem;
 }
@@ -140,6 +139,59 @@
     padding: 1.5rem 0rem;
 }
 
+
+/* Architect Abilities Section */
+.architect-container {
+    gap: 9.13rem;
+    margin-bottom: 10rem;
+}
+
+.architect-abilities {
+    flex: 1;
+}
+
+.architect-title {
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 1.3rem;
+}
+
+.architect-text {
+    padding: 1.5rem 0rem 1.9rem 0rem;
+}
+
+.abilities {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0rem 0.25rem 30rem 0rem rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.25rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.abilities-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.44rem;
+    margin-bottom: 0.6rem;
+}
+
+.architect-image {
+    flex: 1;
+}
+
+.architect-image img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.architect-btn {
+    padding: 2.8rem;
+    margin-top: -4.8rem;
+    margin-left: -5.75rem;
+}
+
+#architect-badge {
+    font-size: 2.75rem;
+}
 
 /* Media Query */
 @media screen and (max-width: 576px) {
@@ -170,6 +222,21 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
         gap: 1.5rem;
+    }
+
+    .architect-container {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 10rem;
+    }
+
+    .architect-btn {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    #architect-badge {
+        font-size: 1rem;
     }
 }
 
@@ -202,6 +269,21 @@
     .feature-info {
         flex: 1;
     }
+
+    .architect-container {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 10rem;
+    }
+
+    .architect-btn {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    #architect-badge {
+        font-size: 1rem;
+    }
 }
 
 
@@ -232,6 +314,21 @@
     .feature-info {
         flex: 1;
     }
+
+    .architect-container {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 10rem;
+    }
+
+    .architect-btn {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    #architect-badge {
+        font-size: 1rem;
+    }
 }
 
 /* desktop */
@@ -242,7 +339,8 @@
 
     .navbar h3,
     .banner-info h2,
-    .feature-info h3 {
+    .feature-info h3,
+    .architect-title {
         font-size: 2rem;
     }
 
@@ -250,7 +348,8 @@
         gap: 1rem;
     }
 
-    .banner-container {
+    .banner-container,
+    .architect-container {
         padding: 0rem 2rem;
     }
 
